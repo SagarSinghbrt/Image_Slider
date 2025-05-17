@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Gallery</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="gallery-wrap">
+			<button id="back">back</button>
+			<div class="gallery">
+				<div>
+					<span
+						><img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_1.jpeg"
+							alt=""
+					/></span>
+
+					<span
+						><img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_2.avif"
+							alt=""
+					/></span>
+
+					<span>
+						<img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_3.avif"
+							alt=""
+						/>
+					</span>
+				</div>
+
+				<div>
+					<span
+						><img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_1.jpeg"
+							alt=""
+					/></span>
+
+					<span
+						><img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_2.avif"
+							alt=""
+					/></span>
+
+					<span>
+						<img
+							src="/Image_Slider_ALL/img_asset/Beautifu_Nature_3.avif"
+							alt=""
+						/>
+					</span>
+				</div>
+			</div>
+			<button id="right">right</button>
+		</div>
+		<script>
+			const scrollContainer = document.querySelector(".gallery");
+			const back = document.getElementById("back");
+			const right = document.getElementById("right");
+
+			scrollContainer.addEventListener("wheel", function (e) {
+				e.preventDefault();
+				scrollContainer.scrollLeft += e.deltaY;
+			});
+
+			right.onclick = () => {
+				scrollContainer.style.scrollBehavior = "smooth";
+				scrollContainer.scrollLeft += 900;
+			};
+
+			back.onclick = () => {
+				scrollContainer.style.scrollBehavior = "smooth";
+				scrollContainer.scrollLeft -= 900;
+			};
+		</script>
+	</body>
+</html>
