@@ -6,16 +6,14 @@ A lightweight and responsive image slider built using HTML, CSS, and JavaScript.
 
 -   Smooth sliding transition
 -   Previous/Next navigation buttons
--   Auto-play support (optional)
 -   Responsive layout for different screen sizes
--   Pause on hover (optional)
 
 ## 🚀 Demo
 
 ![Image Slider Demo](./preview.gif)
 
 <!-- Or link to a live demo -->
-<!-- [Live Demo](https://your-demo-link.com) -->
+<!-- [Live Demo](https://sagarsinghbrt.github.io/Image_Slider/) -->
 
 ## 🛠️ Technologies Used
 
